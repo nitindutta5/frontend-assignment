@@ -1,0 +1,93 @@
+/* Container */
+.tableContainer {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 16px;
+  }
+  
+  .table th,
+  .table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .navButton,
+  .pageButton {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .navButton:disabled,
+  .pageButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .navButton:hover:not(:disabled),
+  .pageButton:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .table th,
+    .table td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .pagination {
+      gap: 0.3rem;
+    }
+  
+    .navButton,
+    .pageButton {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  
